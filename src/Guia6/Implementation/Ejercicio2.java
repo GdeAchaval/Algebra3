@@ -27,7 +27,6 @@ public class Ejercicio2 implements Exercise2{
             double total = 0;
             for(int j=0; j<matrix[0].length; j++){
                 if(i!=j){
-                    //total += Math.abs(matrix[i][j]);
                     total = calculator.sum(total, Math.abs(matrix[i][j]));
                 }
             }

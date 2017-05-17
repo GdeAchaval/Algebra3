@@ -12,7 +12,6 @@ public class Ejercicio1 implements Exercise1 {
     public double exerciseA(double[][] matrix, Calculator calculator){
         double total=0;
         for(int i=0;i<matrix.length;i++){
-            //total+=matrix[i][i];
             total = calculator.sum(total, matrix[i][i]);
         }
         return total;
@@ -22,7 +21,6 @@ public class Ejercicio1 implements Exercise1 {
     public double exerciseB(double [][] matrix, Calculator calculator){
         double total=0;
         for(int i=0;i<matrix.length;i++){
-            //total+=matrix[i][matrix.length-1-i];
             total = calculator.sum(total, matrix[i][matrix.length-1-i]);
         }
         return total;
@@ -34,7 +32,6 @@ public class Ejercicio1 implements Exercise1 {
         for(int i=0;i<matrix.length;i++){
             result[i]=0;
             for(int j=0;j<matrix[i].length;j++){
-                //result[i]+=matrix[i][j];
                 result[i] = calculator.sum(result[i], matrix[i][matrix.length-1-i]);
             }
         }
@@ -42,7 +39,7 @@ public class Ejercicio1 implements Exercise1 {
     }
 
 
-    //el return type de la interface era double ???????????????????? fB
+
     @Override
     public double[] exerciseD(double[][] matrix, double[] vector, Calculator calculator){
         double[] result = new double[vector.length];
@@ -50,7 +47,6 @@ public class Ejercicio1 implements Exercise1 {
         for(int i=0; i<matrix.length; i++){
             result[i] = 0;
             for(int j=0; j<matrix[i].length; j++){
-                //result[i] += matrix[i][j]*vector[j];
                 result[i] = calculator.sum(result[i], matrix[i][j]*vector[j]);
             }
         }
@@ -63,7 +59,6 @@ public class Ejercicio1 implements Exercise1 {
 
         for(int i=0; i<matrix1.length; i++){
             for(int j=0; j<matrix1[0].length; j++){
-                //result[i][j] = matrix1[i][j] + matrix2[i][j];
                 result[i][j] = calculator.sum(matrix1[i][j], matrix2[i][j]);
             }
         }
@@ -80,7 +75,6 @@ public class Ejercicio1 implements Exercise1 {
             for(int k=0; k<matrix2[0].length; k++){
                 result[i][k] = 0;
                 for(int j=0; j<matrix2.length; j++){
-                    //result[i][k] += matrix1[i][j]*matrix2[j][k];
                     result[i][k] = calculator.sum(result[i][k], calculator.multiplication(matrix1[i][j],matrix2[j][k]));
                 }
             }
