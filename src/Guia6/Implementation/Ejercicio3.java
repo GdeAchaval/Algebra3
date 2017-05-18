@@ -143,7 +143,17 @@ public class Ejercicio3 implements Exercise3{
 
     @Override
     public double[][] exerciseCIII(double[][] matrix1, double[][] matrix2, Calculator calculator) {
-        return matrix1;
+        int b=0;
+        double[][] result= new double[matrix1.length][matrix2.length];
+        for(int i=0;i<matrix1.length;i++){
+            for(int k=0;k<matrix2[0].length;k++){
+                for(int j=Math.max(b+i,k-1);j<matrix1.length+i-2&&j<matrix1.length&&j<k+2;j++){
+                    result[i][k] = calculator.sum(result[i][k], calculator.multiplication(matrix1[i][j], matrix2[j][k]));
+                    b=-1;
+                }
+            }
+        }
+        return result;
     }
 
     @Override

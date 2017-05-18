@@ -20,6 +20,7 @@ public class TestEjercicio3 {
 
     private double[][] tridiagonal1 = {{1,2,0,0},{1,2,3,0},{0,1,2,3},{0,0,1,2}};
     private double[][] tridiagonal2 = {{2,3,0,0},{2,3,4,0},{0,2,3,4},{0,0,5,6}};
+    private double[][] tridiagonal3 = {{1,2,0,0,0},{3,2,5,0,0},{0,1,2,3,0},{0,0,1,2,3},{0,0,0,4,5}};
 
     private double[] vector = {1,2,3};
     private double[] vector2 = {1,2,3,4};
@@ -70,11 +71,19 @@ public class TestEjercicio3 {
     public void testCii(){
         printMatrix(ejercicio3.exerciseCII(tridiagonal1, tridiagonal2, calculator));
         System.out.println("Operations: " + calculator.getCount());
+
+        calculator=new CalculatorImpl();
+        printMatrix(ejercicio3.exerciseCII(tridiagonal3, tridiagonal3, calculator));
+        System.out.println("Operations: " + calculator.getCount());
     }
 
     @Test
     public void testCiii(){
         printMatrix(ejercicio3.exerciseCIII(tridiagonal1, tridiagonal2, calculator));
+        System.out.println("Operations: " + calculator.getCount());
+
+        calculator=new CalculatorImpl();
+        printMatrix(ejercicio3.exerciseCIII(tridiagonal3, tridiagonal3, calculator));
         System.out.println("Operations: " + calculator.getCount());
     }
 
