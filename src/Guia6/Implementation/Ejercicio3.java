@@ -147,7 +147,7 @@ public class Ejercicio3 implements Exercise3{
         double[][] result= new double[matrix1.length][matrix2.length];
         for(int i=0;i<matrix1.length;i++){
             for(int k=0;k<matrix2[0].length;k++){
-                for(int j=Math.max(b+i,k-1);j<matrix1.length+i-2&&j<matrix1.length&&j<k+2;j++){
+                for(int j=Math.max(b+i,k-1); j<matrix1.length+i-2 && j<matrix1.length && j<k+2; j++){
                     result[i][k] = calculator.sum(result[i][k], calculator.multiplication(matrix1[i][j], matrix2[j][k]));
                     b=-1;
                 }
@@ -157,13 +157,31 @@ public class Ejercicio3 implements Exercise3{
     }
 
     @Override
-    public double[] exerciseDI(double[][] matrixA, int k1A, int k2A, double[] vectorX, Calculator calculator) {
-        return vectorX;
+    public double[] exerciseDI(double[][] matrix, int k1, int k2, double[] vector, Calculator calculator) {
+        if(k1 < 0 || k2 < 0) throw new RuntimeException("Cannot solve");
+        double[] result = new double[vector.length];
+        result[0] = 0;
+
+        for(int i=0; i<matrix.length; i++){
+            for(int j=Math.max(i-k1, 0); j<=k2+i && j<matrix[0].length; j++){
+                result[i] = calculator.sum(result[i], calculator.multiplication(matrix[i][j], vector[j]));
+            }
+        }
+        return result;
     }
 
     @Override
     public double[][] exerciseDII(double[][] matrixA, int k1A, int k2A, double[][] matrixB, int k1B, int k2B, Calculator calculator) {
-        return new double[0][];
+        if(k1A<0 || k2A<0 || k1B<0 || k2B<0) throw new RuntimeException("Cannot solve");
+        double[][] result = new double[matrixA.length][matrixA[0].length];
+
+        for(int i=0; i<matrixA.length; i++){
+            for(int j=Math.max(Math.min(i-k1A, i-k1B), 0); j<= Math.max(k2A+i, k2B+i) && j<matrixA[0].length; j++){
+                result[i][j] = calculator.sum(matrixA[i][j], matrixB[i][j]);
+            }
+        }
+
+        return result;
     }
 
     @Override
