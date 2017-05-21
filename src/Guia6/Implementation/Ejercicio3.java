@@ -14,7 +14,6 @@ public class Ejercicio3 implements Exercise3{
         double[] result = new double[vector.length];
 
         for(int i=0; i<matrix.length; i++){
-            result[i] = 0;
             for(int j=i; j<matrix[i].length; j++){
                 result[i] = calculator.sum(result[i], calculator.multiplication(matrix[i][j], vector[j]));
             }
@@ -41,7 +40,6 @@ public class Ejercicio3 implements Exercise3{
         double[][] result = new double[matrix1.length][matrix2[0].length];
         for(int i=0; i<matrix1.length; i++){
             for(int k=0; k<matrix2[0].length; k++){
-                result[i][k] = 0;
                 for(int j=i; j<=k; j++){
                     result[i][k] = calculator.sum(result[i][k], calculator.multiplication(matrix1[i][j], matrix2[j][k]));
                 }
@@ -54,13 +52,11 @@ public class Ejercicio3 implements Exercise3{
     public double[] exerciseBI(double[][] matrix, double[] vector, Calculator calculator){
         double[] result = new double[vector.length];
 
-        result[0] = 0;
         for(int k=0; k<matrix.length; k++){
             result[0] = calculator.sum(result[0], calculator.multiplication(matrix[0][k], vector[k]));
         }
 
         for(int i=1; i<matrix.length; i++){
-            result[i] = 0;
             for(int j=i-1; j<matrix[i].length; j++){
                 result[i] = calculator.sum(result[i], calculator.multiplication(matrix[i][j], vector[j]));
             }
@@ -108,10 +104,9 @@ public class Ejercicio3 implements Exercise3{
     @Override
     public double[] exerciseCI(double[][] matrix, double[] vector, Calculator calculator) {
         double[] result = new double[vector.length];
-        result[0] = 0;
 
         for(int i=0; i<2; i++) {
-            for (int j=0; j<i+2; j++) {
+            for(int j=0; j<i+2; j++) {
                 result[i] = calculator.sum(result[i], calculator.multiplication(matrix[i][j], vector[j]));
             }
         }
@@ -128,7 +123,7 @@ public class Ejercicio3 implements Exercise3{
     public double[][] exerciseCII(double[][] matrix1, double[][] matrix2, Calculator calculator) {
         double[][] result = new double[matrix1.length][matrix1[0].length];
 
-        for (int i=0; i<2; i++) {
+        for(int i=0; i<2; i++) {
             for (int j=0; j<i+2; j++) {
                 result[i][j] = calculator.sum(matrix1[i][j], matrix2[i][j]);
             }
@@ -186,11 +181,31 @@ public class Ejercicio3 implements Exercise3{
 
     @Override
     public double[][] exerciseDIII(double[][] matrixA, int k1A, int k2A, double[][] matrixB, int k1B, int k2B, Calculator calculator) {
-        return new double[0][];
+        if(k1A<0 || k2A<0 || k1B<0 || k2B<0) throw new RuntimeException("Cannot solve");
+        double[][] result = new double[matrixA.length][matrixB.length];
+
+        for(int i=0; i<matrixA.length; i++){
+            for(int k=0; k<matrixB.length; k++) {
+                for(int j=Math.max(Math.min(k-k2B, i-k1A), 0); j<Math.min(k2A+i+1, k1B+k+1) && j<matrixA[0].length; j++) {
+                    result[i][k] = calculator.sum(result[i][k], calculator.multiplication(matrixA[i][j], matrixB[j][k]));
+                }
+            }
+        }
+        return result;
     }
 
     @Override
     public double[][] exerciseE(double[][] matrixA, double[][] matrixB, Calculator calculator) {
-        return new double[0][];
+        if(matrixA[0].length != matrixB.length) throw new RuntimeException("Cannot multiply");
+
+        double[][] result = new double[matrixA.length][matrixB[0].length];
+        for(int i=0; i<matrixA.length; i++){
+            for(int k=0; k<matrixB[0].length; k++){
+                for(int j=0; j<=Math.min(k, i); j++){
+                    result[i][k] = calculator.sum(result[i][k], calculator.multiplication(matrixA[i][j], matrixB[j][k]));
+                }
+            }
+        }
+        return result;
     }
 }

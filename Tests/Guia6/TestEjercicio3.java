@@ -12,8 +12,9 @@ public class TestEjercicio3 {
 
     private Ejercicio3 ejercicio3 = new Ejercicio3();
 
-    private double[][] triangular1 = {{1, 2, 3}, {0, 1, 2}, {0, 0, 2}};
+    private double[][] triangular1 = {{1, 2, 3}, {0, 1, 2}, {0, 0, 1}};
     private double[][] triangular2 = {{2, 3, 4}, {0, 4, 3}, {0, 0, 3}};
+    private double[][] triangularInferior = {{1, 0, 0}, {1, 2, 0}, {1, 2, 3}};
 
     private double[][] heisenberg1 = {{1,2,3,4},{3,4,5,6},{0,3,6,2},{0,0,1,2}};
     private double[][] heisenberg2 = {{2,3,4,5},{1,2,4,3},{0,1,2,3},{0,0,3,2}};
@@ -23,7 +24,8 @@ public class TestEjercicio3 {
     private double[][] tridiagonal3 = {{1,2,0,0,0},{3,2,5,0,0},{0,1,2,3,0},{0,0,1,2,3},{0,0,0,4,5}};
 
     private double[][] banda1 = {{1,2,3,0},{1,2,3,4},{0,1,2,3},{0,0,1,2}};
-    private double[][] banda2 = {{1,0,0,0},{0,1,0,0},{0,0,1,0},{0,0,0,1}};
+    private double[][] banda1b = {{1,2,3,0},{1,2,3,4},{0,1,2,3},{0,0,1,2}};
+    private double[][] banda2 = {{2,0,0,0},{0,1,0,0},{0,0,1,0},{0,0,0,1}};
 
     private double[] vector = {1,2,3};
     private double[] vector2 = {1,2,3,4};
@@ -90,7 +92,6 @@ public class TestEjercicio3 {
         System.out.println("Operations: " + calculator.getCount());
     }
 
-
     @Test
     public void testDi(){
         printArray(ejercicio3.exerciseDI(banda1, 1, 2, vector2, calculator));
@@ -102,6 +103,19 @@ public class TestEjercicio3 {
         printMatrix(ejercicio3.exerciseDII(banda1, 1, 2, banda2, 0, 0, calculator));
         System.out.println("Operations: " + calculator.getCount());
     }
+
+    @Test
+    public void testDiii(){
+        printMatrix(ejercicio3.exerciseDIII(banda1, 1, 2, banda1b, 1, 2, calculator));
+        System.out.println("Operations: " + calculator.getCount());
+    }
+
+    @Test
+    public void testE(){
+        printMatrix(ejercicio3.exerciseE(triangular1, triangularInferior, calculator));
+        System.out.println("Operations: " + calculator.getCount());
+    }
+
 
 
     private void printArray(double[] array){
