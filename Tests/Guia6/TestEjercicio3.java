@@ -24,7 +24,6 @@ public class TestEjercicio3 {
     private double[][] tridiagonal3 = {{1,2,0,0,0},{3,2,5,0,0},{0,1,2,3,0},{0,0,1,2,3},{0,0,0,4,5}};
 
     private double[][] banda1 = {{1,2,3,0},{1,2,3,4},{0,1,2,3},{0,0,1,2}};
-    private double[][] banda1b = {{1,2,3,0},{1,2,3,4},{0,1,2,3},{0,0,1,2}};
     private double[][] banda2 = {{2,0,0,0},{0,1,0,0},{0,0,1,0},{0,0,0,1}};
 
     private double[] vector = {1,2,3};
@@ -106,13 +105,13 @@ public class TestEjercicio3 {
 
     @Test
     public void testDiii(){
-        printMatrix(ejercicio3.exerciseDIII(banda1, 1, 2, banda1b, 1, 2, calculator));
+        printMatrix(ejercicio3.exerciseDIII(banda1, 1, 2, banda1, 1, 2, calculator));
         System.out.println("Operations: " + calculator.getCount());
     }
 
     @Test
     public void testE(){
-        printMatrix(ejercicio3.exerciseE(triangular1, triangularInferior, calculator));
+        printMatrix(ejercicio3.exerciseE(triangularInferior, triangular1, calculator));
         System.out.println("Operations: " + calculator.getCount());
     }
 

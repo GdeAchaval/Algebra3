@@ -186,13 +186,14 @@ public class Ejercicio3 implements Exercise3{
 
         for(int i=0; i<matrixA.length; i++){
             for(int k=0; k<matrixB.length; k++) {
-                for(int j=Math.max(Math.min(k-k2B, i-k1A), 0); j<Math.min(k2A+i+1, k1B+k+1) && j<matrixA[0].length; j++) {
+                for(int j=Math.max(Math.max(0,i-k1A),Math.max(0,k-k2B)); j<i+k2A+1&&j<k+k1B+1 && j<matrixA[0].length; j++) {
                     result[i][k] = calculator.sum(result[i][k], calculator.multiplication(matrixA[i][j], matrixB[j][k]));
                 }
             }
         }
         return result;
     }
+
 
     @Override
     public double[][] exerciseE(double[][] matrixA, double[][] matrixB, Calculator calculator) {
@@ -201,7 +202,7 @@ public class Ejercicio3 implements Exercise3{
         double[][] result = new double[matrixA.length][matrixB[0].length];
         for(int i=0; i<matrixA.length; i++){
             for(int k=0; k<matrixB[0].length; k++){
-                for(int j=0; j<=Math.min(k, i); j++){
+                for(int j=0; j<k+1 && j<i+1; j++){
                     result[i][k] = calculator.sum(result[i][k], calculator.multiplication(matrixA[i][j], matrixB[j][k]));
                 }
             }

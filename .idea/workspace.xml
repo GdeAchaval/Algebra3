@@ -6,6 +6,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Algebra3/Guia6/TestEjercicio3.class" afterPath="$PROJECT_DIR$/out/test/Algebra3/Guia6/TestEjercicio3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Guia6/TestEjercicio3.java" afterPath="$PROJECT_DIR$/Tests/Guia6/TestEjercicio3.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Guia6/Implementation/Ejercicio3.java" afterPath="$PROJECT_DIR$/src/Guia6/Implementation/Ejercicio3.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,12 +18,12 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="Ejercicio3.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Guia6/Implementation/Ejercicio3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="210" column="1" lean-forward="true" selection-start-line="210" selection-start-column="1" selection-end-line="210" selection-end-column="1" />
+            <state relative-caret-position="309">
+              <caret line="210" column="5" lean-forward="false" selection-start-line="210" selection-start-column="5" selection-end-line="210" selection-end-column="5" />
               <folding>
                 <element signature="method#exerciseAI#0;class#Ejercicio3#0" expanded="false" />
                 <element signature="method#exerciseAII#0;class#Ejercicio3#0" expanded="false" />
@@ -35,6 +36,8 @@
                 <element signature="method#exerciseCIII#0;class#Ejercicio3#0" expanded="false" />
                 <element signature="method#exerciseDI#0;class#Ejercicio3#0" expanded="false" />
                 <element signature="method#exerciseDII#0;class#Ejercicio3#0" expanded="false" />
+                <element signature="method#exerciseDIII#0;class#Ejercicio3#0" expanded="false" />
+                <element signature="method#exerciseE#0;class#Ejercicio3#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -43,8 +46,8 @@
       <file leaf-file-name="TestEjercicio3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/Guia6/TestEjercicio3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-816">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="81">
+              <caret line="93" column="9" lean-forward="true" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
               <folding>
                 <element signature="method#testBi#0;class#TestEjercicio3#0" expanded="false" />
                 <element signature="method#testBii#0;class#TestEjercicio3#0" expanded="false" />
@@ -55,6 +58,7 @@
                 <element signature="method#testDi#0;class#TestEjercicio3#0" expanded="false" />
                 <element signature="method#testDii#0;class#TestEjercicio3#0" expanded="false" />
                 <element signature="method#testDiii#0;class#TestEjercicio3#0" expanded="false" />
+                <element signature="method#testE#0;class#TestEjercicio3#0" expanded="false" />
                 <element signature="method#printArray#0;class#TestEjercicio3#0" expanded="false" />
                 <element signature="method#printMatrix#0;class#TestEjercicio3#0" expanded="false" />
               </folding>
@@ -107,7 +111,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -133,24 +137,6 @@
               <option name="myItemId" value="Tests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Guia6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Algebra3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Algebra3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -167,28 +153,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Guia6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Algebra3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Algebra3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Guia6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Implementation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -208,7 +172,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -230,7 +194,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestEjercicio3.testE">
+  <component name="RunManager" selected="JUnit.TestEjercicio3">
     <configuration default="false" name="TestEjercicio3.testCiii" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -283,58 +247,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="TestEjercicio3.testAi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Guia6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Algebra3" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Guia6" />
-      <option name="MAIN_CLASS_NAME" value="Guia6.TestEjercicio3" />
-      <option name="METHOD_NAME" value="testAi" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestEjercicio3.testBi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Guia6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Algebra3" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Guia6" />
-      <option name="MAIN_CLASS_NAME" value="Guia6.TestEjercicio3" />
-      <option name="METHOD_NAME" value="testBi" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="TestEjercicio3.testE" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -349,6 +261,58 @@
       <option name="MAIN_CLASS_NAME" value="Guia6.TestEjercicio3" />
       <option name="METHOD_NAME" value="testE" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestEjercicio3.testDi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Guia6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Algebra3" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Guia6" />
+      <option name="MAIN_CLASS_NAME" value="Guia6.TestEjercicio3" />
+      <option name="METHOD_NAME" value="testDi" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestEjercicio3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Guia6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Algebra3" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Guia6" />
+      <option name="MAIN_CLASS_NAME" value="Guia6.TestEjercicio3" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -751,17 +715,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.TestEjercicio3.testCiii" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.TestEjercicio3.testDiii" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestEjercicio3.testAi" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestEjercicio3.testBi" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestEjercicio3.testE" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestEjercicio3.testE" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestEjercicio3.testDi" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestEjercicio3" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestEjercicio3.testE" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestEjercicio3.testBi" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestEjercicio3.testAi" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestEjercicio3" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestEjercicio3.testE" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestEjercicio3.testDiii" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.TestEjercicio3.testCiii" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestEjercicio3.testDiii" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestEjercicio3.testDi" />
       </list>
     </recent_temporary>
   </component>
@@ -781,7 +745,9 @@
       <workItem from="1495069604871" duration="618000" />
       <workItem from="1495070295866" duration="7151000" />
       <workItem from="1495124941649" duration="873000" />
-      <workItem from="1495397320417" duration="7320000" />
+      <workItem from="1495397320417" duration="7366000" />
+      <workItem from="1495458155247" duration="621000" />
+      <workItem from="1495497505693" duration="369000" />
     </task>
     <task id="LOCAL-00001" summary="Gitignore update">
       <created>1495069671771</created>
@@ -804,24 +770,25 @@
       <option name="project" value="LOCAL" />
       <updated>1495407896183</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Ej 3 agregados">
+      <created>1495408177576</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1495408177576</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestEjercicio3_testE - 2017.05.21 at 19h 44m 09s.xml">
-      <configuration name="TestEjercicio3.testE" configurationId="JUnit" />
+    <history-entry file="TestEjercicio3 - 2017.05.22 at 21h 04m 05s.xml">
+      <configuration name="TestEjercicio3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestEjercicio3_testE - 2017.05.21 at 19h 46m 22s.xml">
-      <configuration name="TestEjercicio3.testE" configurationId="JUnit" />
+    <history-entry file="TestEjercicio3_testDiii - 2017.05.22 at 11h 06m 10s.xml">
+      <configuration name="TestEjercicio3.testDiii" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestEjercicio3_testE - 2017.05.21 at 19h 46m 45s.xml">
-      <configuration name="TestEjercicio3.testE" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestEjercicio3_testE - 2017.05.21 at 19h 46m 53s.xml">
-      <configuration name="TestEjercicio3.testE" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestEjercicio3_testE - 2017.05.21 at 19h 47m 03s.xml">
-      <configuration name="TestEjercicio3.testE" configurationId="JUnit" />
+    <history-entry file="TestEjercicio3_testDiii - 2017.05.22 at 20h 59m 25s.xml">
+      <configuration name="TestEjercicio3.testDiii" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestEjercicio3_testE - 2017.05.21 at 19h 47m 14s.xml">
       <configuration name="TestEjercicio3.testE" configurationId="JUnit" />
@@ -838,9 +805,15 @@
     <history-entry file="TestEjercicio3_testE - 2017.05.21 at 20h 07m 39s.xml">
       <configuration name="TestEjercicio3.testE" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestEjercicio3_testE - 2017.05.22 at 21h 01m 50s.xml">
+      <configuration name="TestEjercicio3.testE" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestEjercicio3_testE - 2017.05.22 at 21h 02m 15s.xml">
+      <configuration name="TestEjercicio3.testE" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16897000" />
+    <option name="totallyTimeSpent" value="17933000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="720" extended-state="6" />
@@ -855,7 +828,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3533026" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24270353" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26728112" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -886,7 +859,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ejercicio 3 tested OK.&#10;-D(i)&#10;-D(ii)" />
     <MESSAGE value="Gitignore update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gitignore update" />
+    <MESSAGE value="Ej 3 agregados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ej 3 agregados" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -899,6 +873,49 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Guia6/Implementation/Ejercicio3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3150">
+          <caret line="210" column="1" lean-forward="true" selection-start-line="210" selection-start-column="1" selection-end-line="210" selection-end-column="1" />
+          <folding>
+            <element signature="method#exerciseAI#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseAII#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseAIII#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseBI#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseBII#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseBIII#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseCI#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseCII#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseCIII#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseDI#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseDII#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseDIII#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseE#0;class#Ejercicio3#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Guia6/TestEjercicio3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="method#testBi#0;class#TestEjercicio3#0" expanded="false" />
+            <element signature="method#testBii#0;class#TestEjercicio3#0" expanded="false" />
+            <element signature="method#testBiii#0;class#TestEjercicio3#0" expanded="false" />
+            <element signature="method#testCi#0;class#TestEjercicio3#0" expanded="false" />
+            <element signature="method#testCii#0;class#TestEjercicio3#0" expanded="false" />
+            <element signature="method#testCiii#0;class#TestEjercicio3#0" expanded="false" />
+            <element signature="method#testDi#0;class#TestEjercicio3#0" expanded="false" />
+            <element signature="method#testDii#0;class#TestEjercicio3#0" expanded="false" />
+            <element signature="method#testDiii#0;class#TestEjercicio3#0" expanded="false" />
+            <element signature="method#testE#0;class#TestEjercicio3#0" expanded="false" />
+            <element signature="method#printArray#0;class#TestEjercicio3#0" expanded="false" />
+            <element signature="method#printMatrix#0;class#TestEjercicio3#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Guia6/Implementation/Ejercicio3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -915,6 +932,8 @@
             <element signature="method#exerciseCIII#0;class#Ejercicio3#0" expanded="false" />
             <element signature="method#exerciseDI#0;class#Ejercicio3#0" expanded="false" />
             <element signature="method#exerciseDII#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseDIII#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseE#0;class#Ejercicio3#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -935,6 +954,8 @@
             <element signature="method#exerciseCIII#0;class#Ejercicio3#0" expanded="false" />
             <element signature="method#exerciseDI#0;class#Ejercicio3#0" expanded="false" />
             <element signature="method#exerciseDII#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseDIII#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseE#0;class#Ejercicio3#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -955,6 +976,8 @@
             <element signature="method#exerciseCIII#0;class#Ejercicio3#0" expanded="false" />
             <element signature="method#exerciseDI#0;class#Ejercicio3#0" expanded="false" />
             <element signature="method#exerciseDII#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseDIII#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseE#0;class#Ejercicio3#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -982,6 +1005,8 @@
             <element signature="method#exerciseCIII#0;class#Ejercicio3#0" expanded="false" />
             <element signature="method#exerciseDI#0;class#Ejercicio3#0" expanded="false" />
             <element signature="method#exerciseDII#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseDIII#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseE#0;class#Ejercicio3#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1009,6 +1034,8 @@
             <element signature="method#exerciseCIII#0;class#Ejercicio3#0" expanded="false" />
             <element signature="method#exerciseDI#0;class#Ejercicio3#0" expanded="false" />
             <element signature="method#exerciseDII#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseDIII#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseE#0;class#Ejercicio3#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1037,8 +1064,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Guia6/Implementation/Ejercicio3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="210" column="1" lean-forward="true" selection-start-line="210" selection-start-column="1" selection-end-line="210" selection-end-column="1" />
+        <state relative-caret-position="309">
+          <caret line="210" column="5" lean-forward="false" selection-start-line="210" selection-start-column="5" selection-end-line="210" selection-end-column="5" />
           <folding>
             <element signature="method#exerciseAI#0;class#Ejercicio3#0" expanded="false" />
             <element signature="method#exerciseAII#0;class#Ejercicio3#0" expanded="false" />
@@ -1051,14 +1078,16 @@
             <element signature="method#exerciseCIII#0;class#Ejercicio3#0" expanded="false" />
             <element signature="method#exerciseDI#0;class#Ejercicio3#0" expanded="false" />
             <element signature="method#exerciseDII#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseDIII#0;class#Ejercicio3#0" expanded="false" />
+            <element signature="method#exerciseE#0;class#Ejercicio3#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/Guia6/TestEjercicio3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-816">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="81">
+          <caret line="93" column="9" lean-forward="true" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
           <folding>
             <element signature="method#testBi#0;class#TestEjercicio3#0" expanded="false" />
             <element signature="method#testBii#0;class#TestEjercicio3#0" expanded="false" />
@@ -1069,6 +1098,7 @@
             <element signature="method#testDi#0;class#TestEjercicio3#0" expanded="false" />
             <element signature="method#testDii#0;class#TestEjercicio3#0" expanded="false" />
             <element signature="method#testDiii#0;class#TestEjercicio3#0" expanded="false" />
+            <element signature="method#testE#0;class#TestEjercicio3#0" expanded="false" />
             <element signature="method#printArray#0;class#TestEjercicio3#0" expanded="false" />
             <element signature="method#printMatrix#0;class#TestEjercicio3#0" expanded="false" />
           </folding>
